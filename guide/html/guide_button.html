@@ -1,0 +1,695 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>스타일 가이드</title>
+
+		<!-- 소스코드 하이라이트 -->
+		<script src="../libs/shCore.js"></script>
+		<script src="../libs/shBrushCss.js"></script>
+		<script src="../libs/shBrushJScript.js"></script>
+		<script src="../libs/shBrushXml.js"></script>
+
+		<!-- 프로젝트 jquery -->
+		<script src="../../app/js/vendor/jquery-1.11.2.min.js"></script>
+		<script src="../../app/js/vendor/materialize.min.js"></script>
+		<script src="../../app/js/vendor/modernizr-2.8.3.min.js"></script>
+
+		<!-- 가이드 css -->
+		<link rel="stylesheet" href="../css/common.css" />
+
+		<!-- 프로젝트 css -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+		<link rel="stylesheet" href="../../app/css/normalize.css" />
+		<link rel="stylesheet" href="../../app/css/helper.css" />
+		<link rel="stylesheet" href="../../app/css/ico.css" />
+
+		<link rel="stylesheet" href="../../app/css/fonts.css" />
+		<link rel="stylesheet" href="../../app/css/color.css" />
+		<link rel="stylesheet" href="../../app/css/common.css" />
+
+		<!-- 소스코드 css -->
+		<link rel="stylesheet" href="../../css/shCore.css" />
+		<link rel="stylesheet" href="../../css/shThemeEmacs.css" />
+
+		<style>
+			.btn_n {
+				margin-bottom: 4px;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div id="gWrap" class="g_wrap">
+			<!-- header -->
+			<div id="gHeader" class="g_header">
+				<h1><small class="g_project_name">호텔가 프로젝트</small><strong class="g_name">UX Style Guide</strong></h1>
+				<div class="g_project_worker">
+					<ul>
+						<li>
+							<strong class="tit">Designer</strong>김서영
+						</li>
+						<li>
+							<strong class="tit">Publisher</strong>김미령
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- side -->
+			<div id="gSide" class="g_side">
+				<div class="inner">
+					<div class="g_side_top">
+						<strong class="g_h_logo"><span class="blind">호텔가</span></strong>
+					</div>
+					<div class="g_lnb">
+						<ul class="g_lnb_depth1">
+							<li>
+								<a href="#" class="on">Guide</a>
+								<ul class="g_lnb_depth2">
+									<li>
+										<a href="guide_basic.html">기초 구성</a>
+									</li>
+									<li>
+										<a href="guide_grid.html">그리드</a>
+									</li>
+									<li>
+										<a href="guide_typography.html">타이포그래피</a>
+									</li>
+									<li>
+										<a href="guide_button.html" class="on">버튼</a>
+									</li>
+									<li>
+										<a href="guide_icon.html">아이콘</a>
+									</li>
+									<li>
+										<a href="guide_form.html">폼</a>
+									</li>
+									<li>
+										<a href="guide_list.html">리스트</a>
+									</li>	
+									<li>
+										<a href="guide_content.html">컨텐츠 공통</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- container -->
+			<div id="gContainer" class="g_container">
+				<!--  큰 컨텐츠 박스 -->
+				<div class="g_section">
+					<h2 class="g_tit_cont1">버튼</h2>
+					<!-- 박스 안 컨텐츠 -->
+					<div class="g_content_box">
+						<div class="g_tit_cont2">
+							<h3 class="g_tit"><span class="txt_num">01.</span>기본 스타일</h3>
+						</div>
+						<div class="g_content">
+							<div class="g_code_box">
+								<div class="g_sub_section">
+									<h4 class="g_tit_cont3">앵커태그</h4>
+									<!-- 여기서부터 사용 -->
+									<a href="#" class="btn_n">btn_n</a>
+									<a href="#" class="btn_n noline bg-yellow text-white">btn_red</a>
+									<a href="#" class="btn_n noline bg-mint text-white">btn_mint</a>
+									<a href="#" class="btn_n noline bg-gray-3 text-white">btn_dark</a>
+									<a href="#" class="btn_n noline bg-gray-4 border-gray-2  text-gray-2">btn_light</a>
+								</div>
+
+								<div class="g_sub_section">
+									<h4 class="g_tit_cont3">버튼태그</h4>
+									<!-- 여기서부터 사용 -->
+									<button type="button" class="btn_n">
+										btn_n
+									</button>
+									<button type="button" class="btn_n noline bg-yellow text-white">
+										btn_yellow
+									</button>
+									<button type="button" class="btn_n noline bg-mint text-white">
+										btn_mint
+									</button>
+									<button type="button" class="btn_n noline bg-darkgray-2 text-white">
+										btn_dark
+									</button>
+
+								</div>
+
+								<div class="g_sub_section">
+									<h4 class="g_tit_cont3">비활성화</h4>
+									<!-- 여기서부터 사용 -->
+									<button type="button" class="btn_n" disabled="disabled">
+										btn_n
+									</button>
+									<button type="button" class="btn_n noline bg-yellow text-white" disabled="disabled">
+										btn_yellow
+									</button>
+									<button type="button" class="btn_n noline bg-mint text-white" disabled="disabled">
+										btn_mint
+									</button>
+									<button type="button" class="btn_n noline bg-darkgray-2 text-white" disabled="disabled">
+										btn_darkgray-2
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //박스 안 컨텐츠 -->
+					<!-- 박스 안 컨텐츠 -->
+					<div class="g_content_box">
+						<div class="g_tit_cont2">
+							<h3 class="g_tit"><span class="txt_num">02.</span>크기</h3>
+						</div>
+						<div class="g_content">
+							<div class="g_code_box" style="width: 360px">
+								<h4 class="g_tit_cont3">버튼 높이 지정</h4>
+								<!-- 여기서부터 사용 -->
+								<button type="button" class="btn_n btn_s radius-4">
+									Button-s (24)
+								</button>
+								<button type="button" class="btn_n btn_m radius-4">
+									<strong>Button-m (38)</strong>
+								</button>
+								<button type="button" class="btn_n btn_l radius-4">
+									<strong>Button-l (48)</strong>
+								</button>
+
+								<h4 class="g_tit_cont3">width 100% 버튼</h4>
+								<!--여기서부터 사용-->
+								<button type="button" class="btn_n btn_l bg-darkgray-2 text-white noline w100">
+									<span class="text"><strong>확인</strong></span>
+								</button>
+
+								<div class="row">
+									<div class="col s6 np">
+										<button type="button" class="btn_n btn_l bg-darkgray-2 text-white noline w100">
+											<span class="text"><strong>확인</strong></span>
+										</button>
+									</div>
+									<div class="col s6 np">
+										<button type="button" class="btn_n btn_l w100">
+											<span class="text text-dark"><strong>취소</strong></span>
+										</button>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- //박스 안 컨텐츠 -->
+					<!-- 박스 안 컨텐츠 -->
+					<div class="g_content_box">
+						<div class="g_tit_cont2">
+							<h3 class="g_tit"><span class="txt_num">03.</span>팝업</h3>
+						</div>
+						<div class="g_content">
+							<div class="g_code_box">
+								<div class="g_sub_section" style="width: 360px;">
+									<h4 class="g_tit_cont3">하단버튼1</h4>
+									<!-- 여기서부터 사용 -->
+									<button type="button" class="btn_n btn_m bg-darkgray-2 radius_4">
+										<span class="text-white bold">확인</span>
+									</button>
+
+									<h4 class="g_tit_cont3">하단버튼2</h4>
+									<!-- 여기서부터 사용 -->
+									<div class="row">
+										<div class="col s6 np">
+											<button type="button" class="btn_n btn_l bg-darkgray-2 w100 radius_4">
+												<span class="text-white bold">취소</span>
+											</button>
+										</div>
+										<div class="col s6 np">
+											<button type="button" class="btn_n btn_l w100 radius_4">
+												<span class="text-dark bold">확인</span>
+											</button>
+										</div>
+									</div>
+									<h4 class="g_tit_cont3">하단버튼3</h4>
+									<!-- 여기서부터 사용 -->
+									<div class="row">
+										<button type="button" class="btn_n btn_m bg-darkgray-2 w100 radius_4">
+											<span class="text text-white bold">확인</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //박스 안 컨텐츠 -->
+				</div>
+				<!--  //큰 컨텐츠 박스 -->
+				<!--  큰 컨텐츠 박스 -->
+				<div class="g_section">
+					<h2 class="g_tit_cont1">아이콘</h2>
+					<!-- 박스 안 컨텐츠 -->
+					<div class="g_content_box">
+						<div class="g_tit_cont2">
+							<h3 class="g_tit"><span class="txt_num">01.</span>아이콘 버튼</h3>
+						</div>
+						<div class="g_content">
+							<div class="g_code_box">
+								<!--여기서부터 사용-->
+								<button>
+									<img src="../../app/images/ic_bubble.png" alt="">
+								</button>
+								<button>
+									<img src="../../app/images/ic_couponplus.png" alt="">
+								</button>
+								<button>
+									<img src="../../app/images/ic_coupin50.png" alt="">
+								</button>
+								<button>
+									<img src="../../app/images/ic_error.png" alt="">
+								</button>
+								<button>
+									<img src="../../app/images/ic_calendar.png" alt="">
+								</button>
+								<button>
+									<img src="../../app/images/ic_letter.png" alt="">
+								</button>
+							</div>
+						</div>
+					</div>
+					<!-- //박스 안 컨텐츠 -->
+					<!-- 박스 안 컨텐츠 -->
+					<div class="g_content_box">
+						<div class="g_tit_cont2">
+							<h3 class="g_tit"><span class="txt_num">02.</span>권한 허용 아이콘</h3>
+						</div>
+						<div class="g_content">
+							<div class="g_code_box">
+								<div class="g_sub_section">
+									<button>
+										<img src="../../app/images/ic_camera.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic_phone.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic_map.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic_photo.png" alt="">
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //박스 안 컨텐츠 -->
+					<!-- 박스 안 컨텐츠 -->
+					<div class="g_content_box">
+						<div class="g_tit_cont2">
+							<h3 class="g_tit"><span class="txt_num">03.</span>BI</h3>
+						</div>
+						<div class="g_content">
+							<div class="g_code_box">
+								<div class="g_sub_section">
+									<button>
+										<img src="../../app/images/BI_100.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic_splash.png" alt="">
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //박스 안 컨텐츠 -->
+					<!-- 박스 안 컨텐츠 -->
+					<div class="g_content_box">
+						<div class="g_tit_cont2">
+							<h3 class="g_tit"><span class="txt_num">04.</span>버튼</h3>
+						</div>
+						<div class="g_content">
+							<div class="g_code_box">
+								<div class="g_sub_section">
+									<button>
+										<img src="../../app/images/setup_off.png" alt="">
+										설정 ON
+									</button>
+									<button>
+										<img src="../../app/images/setup_on.png" alt="">
+										설정 OFF
+									</button>
+									<button>
+										<img src="../../app/images/check_blue.png" alt="">
+										선택 ON
+									</button>
+									<button>
+										<img src="../../app/images/check_grey.png" alt="">
+										선택 OFF
+									</button>
+									<button>
+										<img src="../../app/images/bell_on.png" alt="">
+										알림 ON
+									</button>
+									<button>
+										<img src="../../app/images/bell_off.png" alt="">
+										알림 OFF
+									</button>
+									<button>
+										<img src="../../app/images/ic_check_on.png" alt="">
+										체크 ON
+									</button>
+									<button>
+										<img src="../../app/images/ic_check_off.png" alt="">
+										체크 OFF
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //박스 안 컨텐츠 -->
+					<!-- 박스 안 컨텐츠 -->
+					<div class="g_content_box">
+						<div class="g_tit_cont2">
+							<h3 class="g_tit"><span class="txt_num">05.</span>네비게이션 아이콘</h3>
+						</div>
+						<div class="g_content">
+							<div class="g_code_box">
+								<div class="g_sub_section">
+									<button>
+										<img src="../../app/images/ic_menu.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic_close.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic_share.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic_arrow_left.png" alt="">
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //박스 안 컨텐츠 -->
+					<!-- 박스 안 컨텐츠 -->
+					<div class="g_content_box">
+						<div class="g_tit_cont2">
+							<h3 class="g_tit"><span class="txt_num">06.</span>편의시설 아이콘</h3>
+						</div>
+						<div class="g_content">
+							<div class="g_code_box">
+								<div class="g_sub_section">
+									<button>
+										<img src="../../app/images/ic_facility01.png" alt="">
+										<p>주차가능</p>
+									</button>
+									<button>
+										<img src="../../app/images/ic_facility02.png" alt="">
+										<p>레이트 체크아웃</p>
+									</button>
+									<button>
+										<img src="../../app/images/ic_facility03.png" alt="">
+										<p>VOD</p>
+									</button>
+									<button>
+										<img src="../../app/images/ic_facility04.png" alt="">
+										<p>커플PC</p>
+									</button>
+									<button>
+										<img src="../../app/images/ic_facility05.png" alt="">
+										<p>객실 내 PC</p>
+									</button>
+									<button>
+										<img src="../../app/images/ic_facility06.png" alt="">
+										<p>파티룸</p>
+									</button>
+									<button>
+										<img src="../../app/images/ic_facility07.png" alt="">
+										<p>트윈 베드</p>
+									</button>
+									<button>
+										<img src="../../app/images/ic_facility08.png" alt="">
+										<p>조식 운영</p>
+									</button>
+									<button>
+										<img src="../../app/images/ic_facility09.png" alt="">
+										<p>와이파이</p>
+									</button>
+									<button>
+										<img src="../../app/images/ic_facility10.png" alt="">
+										<p>스파욕조</p>
+									</button>
+									<button>
+										<img src="../../app/images/ic_facility11.png" alt="">
+										<p>야외테라스</p>
+									</button>
+									<button>
+										<img src="../../app/images/ic_facility12.png" alt="">
+										<p>더블베드</p>
+									</button>
+									<button>
+										<img src="../../app/images/ic_facility13.png" alt="">
+										<p>연박가능</p>
+									</button>
+									<button>
+										<img src="../../app/images/ic_facility14.png" alt="">
+										<p>가족룸</p>
+									</button>
+									<button>
+										<img src="../../app/images/ic_facility15.png" alt="">
+										<p>얼리체크인</p>
+									</button>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //박스 안 컨텐츠 -->
+					<!-- 박스 안 컨텐츠 -->
+					<div class="g_content_box">
+						<div class="g_tit_cont2">
+							<h3 class="g_tit"><span class="txt_num">07.</span>ECT</h3>
+						</div>
+						<div class="g_content">
+							<div class="g_code_box">
+								<div class="g_sub_section">
+									<button>
+										<img src="../../app/images/ic_like_on.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic_like_off.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic_coupon_on.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic_coupon-off.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic_date_on.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic_date_off.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic_phone_small.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic_qr.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic_reserve.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic_reviews.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic_share.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic_up.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic_down.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic-left-small.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic_close_small.png" alt="">
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //박스 안 컨텐츠 -->
+					<!-- 박스 안 컨텐츠 -->
+					<div class="g_content_box">
+						<div class="g_tit_cont2">
+							<h3 class="g_tit"><span class="txt_num">08.</span>상태 아이콘</h3>
+						</div>
+						<div class="g_content">
+							<div class="g_code_box">
+								<div class="g_sub_section">
+									<button class="btn_s_icon bg-orange btn_round text-white">
+										NEW
+									</button>
+									<button class="btn_s_icon bg-darkgray-3 radius_4 text-white">
+										대기
+									</button>
+									<button class="btn_s_icon bg-orange-2 radius_4 text-white">
+										완료
+									</button>
+									<button class="btn_s_icon bg-mint radius_4 text-white">
+										예약완료
+									</button>
+									<button class="btn_s_icon border-gray radius_4 text-dark">
+										이용완료
+									</button>
+									<button class="btn_s_icon bg-gray radius_4 text-dark">
+										예약취소
+									</button>
+									<button class="btn_s_icon bg-orange-2 radius_4 text-white">
+										입금대기
+									</button>
+									<button class="btn_s_icon bg-red radius_4 text-white">
+										예약실패
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //박스 안 컨텐츠 -->
+					<!-- 박스 안 컨텐츠 -->
+					<div class="g_content_box">
+						<div class="g_tit_cont2">
+							<h3 class="g_tit"><span class="txt_num">09.</span>로딩</h3>
+						</div>
+						<div class="g_content">
+							<div class="g_code_box">
+								<div class="g_sub_section">
+									<button>
+										<img src="../../app/images/ic_loading_001.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic_loading_002.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic_loading_003.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic_loading_004.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/ic_loading_005.png" alt="">
+									</button>
+									<button>
+										<img src="../../app/images/sample.gif" alt="">
+									</button>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //박스 안 컨텐츠 -->
+					<!-- 박스 안 컨텐츠 -->
+					<div class="g_content_box">
+						<div class="g_tit_cont2">
+							<h3 class="g_tit"><span class="txt_num">10.</span>플로팅</h3>
+						</div>
+						<div class="g_content">
+							<div class="g_code_box">
+								<div class="g_sub_section">
+									
+									<button>
+										<img src="../../app/images/bt_floating.png" alt="">
+									</button>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //박스 안 컨텐츠 -->
+					<!-- 박스 안 컨텐츠 -->
+					<div class="g_content_box">
+						<div class="g_tit_cont2">
+							<h3 class="g_tit"><span class="txt_num">11.</span>리뷰평가 아이콘</h3>
+						</div>
+						<div class="g_content">
+							<div class="g_code_box">
+								<div class="g_sub_section">
+									<button>
+										<img src="../../app/images/big_star_00.png" alt="">
+									</button>
+								</div>
+								<div class="g_sub_section">
+									<button>
+										<img src="../../app/images/big_star_01.png" alt="">
+									</button>
+								</div>
+								<div class="g_sub_section">
+									<button>
+										<img src="../../app/images/big_star_02.png" alt="">
+									</button>
+								</div>
+								<div class="g_sub_section">
+									<button>
+										<img src="../../app/images/big_star_03.png" alt="">
+									</button>
+								</div>
+								<div class="g_sub_section">
+									<button>
+										<img src="../../app/images/big_star_04.png" alt="">
+									</button>
+								</div>
+								<div class="g_sub_section">
+									<button>
+										<img src="../../app/images/big_star_05.png" alt="">
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //박스 안 컨텐츠 -->
+					<!-- 박스 안 컨텐츠 -->
+					<div class="g_content_box">
+						<div class="g_tit_cont2">
+							<h3 class="g_tit"><span class="txt_num">12.</span>텍스트 아이콘 조합</h3>
+						</div>
+						<div class="g_content">
+							<div class="g_code_box">
+								<div class="g_sub_section">
+									<button class="btn_n border-gray">
+										<img src="../../app/images/ic_coupon_on.png" alt=""> 쿠폰 <span class="btn_s_icon bg-red text-white" style="border-radius: 50%;">N</span>
+									</button>
+									<button class="btn_n border-gray">
+										<img src="../../app/images/ic_coupon_off.png" alt=""> 쿠폰
+									</button>
+									<button class="btn_n border-gray">
+										<img src="../../app/images/ic_date_on.png" alt=""> 예약 내역
+									</button>
+									<button class="btn_n border-gray">
+										<img src="../../app/images/ic_date_off.png" alt=""> 예약 내역
+									</button>
+									<button class="btn_n bg-yellow btn_round2">
+										<img src="../../app/images/ic_qr.png" alt=""> QR로 등록하기
+									</button>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<!-- //박스 안 컨텐츠 -->
+				</div>
+				<!--  //큰 컨텐츠 박스 -->
+				<!-- 상단으로 가기 버튼 -->
+				<div class="btn_all_top">
+					<a href="#" class="btn_top">Top</a>
+				</div>
+			</div>
+		</div>
+
+		<script src="../app/common.js"></script>
+	</body>
+
+</html>

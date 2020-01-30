@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>스타일 가이드</title>
+
+    <!-- 소스코드 하이라이트 -->
+    <script src="../libs/shCore.js"></script>
+    <script src="../libs/shBrushCss.js"></script>
+    <script src="../libs/shBrushJScript.js"></script>
+    <script src="../libs/shBrushXml.js"></script>
+
+    <!-- 프로젝트 jquery -->
+    <script src="../../app/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="../../app/js/vendor/materialize.min.js"></script>
+    <script src="../../app/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- 가이드 css -->
+    <link rel="stylesheet" href="../css/common.css" />
+
+    <!-- 프로젝트 css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="../../app/css/normalize.css" />
+    <link rel="stylesheet" href="../../app/css/helper.css" />
+    <link rel="stylesheet" href="../../app/css/ico.css" />
+
+    <link rel="stylesheet" href="../../app/css/fonts.css" />
+    <link rel="stylesheet" href="../../app/css/color.css" />
+    <link rel="stylesheet" href="../../app/css/common.css" />
+
+    <!-- 소스코드 css -->
+    <link rel="stylesheet" href="../css/shCore.css" />
+    <link rel="stylesheet" href="../css/shThemeEmacs.css" />
+</head>
+
+<body>
+    <div id="gWrap" class="g_wrap">
+        <!-- header -->
+        <div id="gHeader" class="g_header">
+            <h1><small class="g_project_name">호텔가 프로젝트</small><strong class="g_name">UX Style Guide</strong></h1>
+            <div class="g_project_worker">
+                <ul>
+                    <li><strong class="tit">Designer</strong>김서영</li>
+                    <li><strong class="tit">Publisher</strong>김미령</li>
+                </ul>
+            </div>
+        </div>
+        <!-- side -->
+        <div id="gSide" class="g_side">
+            <div class="inner">
+                <div class="g_side_top">
+                    <strong class="g_h_logo"><span class="blind">호텔가</span></strong>
+                </div>
+                <div class="g_lnb">
+                    <ul class="g_lnb_depth1">
+                        <li>
+                            <a href="#" class="on">Guide</a>
+                            <ul class="g_lnb_depth2">
+                                <li><a href="guide_basic.html">기초 구성</a></li>
+                                <li><a href="guide_grid.html">그리드</a></li>
+                                <li><a href="guide_typography.html">타이포그래피</a></li>
+                                <li><a href="guide_button.html">버튼</a></li>
+                                <li><a href="guide_icon.html">아이콘</a></li>
+                                <li><a href="guide_form.html" class="on">폼</a></li>
+                                <li><a href="guide_list.html">리스트</a></li>
+                                <li><a href="guide_content.html">컨텐츠 공통</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- container -->
+        <div id="gContainer" class="g_container">
+            <!--  큰 컨텐츠 박스 -->
+            <div class="g_section">
+                <h2 class="g_tit_cont1">폼</h2>
+                <!-- 박스 안 컨텐츠 -->
+                <div class="g_content_box">
+                    <div class="g_tit_cont2">
+                        <h3 class="g_tit"><span class="txt_num">01.</span>기본 스타일</h3>
+                    </div>
+                    <div class="g_content">
+                        <div class="g_code_box" style="width: 360px;">
+                            <div class="g_sub_section">
+                                <h4 class="g_tit_cont3">기본 텍스트폼</h4>
+                                <!-- 여기서부터 사용 -->      
+                                <label for="" class="label">예약자명(체크인시 필요)</label>                          
+                                <input type="text" class="edge under-line" placeholder="예약자명">
+                            </div>
+                            
+                            <div class="g_sub_section">
+                                <h4 class="g_tit_cont3">기본 텍스트폼</h4>
+                                <!-- 여기서부터 사용 -->
+                                <label for="" class="label">예약자 연락처</label>  
+                                <div class="form_g">
+	                                <input type="text" class="edge under-line" placeholder="예약자 연락처">
+	                                <button class="form_btn">인증번호 발송</button>
+                                </div>
+                            </div>
+                            
+                            <div class="g_sub_section">
+                                <h4 class="g_tit_cont3">기본 텍스트폼</h4>
+                                <!-- 여기서부터 사용 -->
+                                <label for="" class="label">인증번호</label>  
+                                <div class="form_g">
+	                                <input type="text" class="edge under-line" placeholder="인증번호">
+	                                <button class="form_btn">인증하기</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 설명 -->
+                        <div class="box box_imp">
+                            <ul class="list_disc">
+                                <li>인풋의 width값은 인라인으로 조절 가능.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- //박스 안 컨텐츠 -->
+               
+                <!-- 박스 안 컨텐츠 -->
+                <div class="g_content_box">
+                    <div class="g_tit_cont2">
+                        <h3 class="g_tit"><span class="txt_num">02.</span>텍스트박스</h3>
+                    </div>
+                    <div class="g_content">
+                        <div class="g_code_box" style="width: 360px;">
+                            <div class="g_sub_section">
+                                <h4 class="g_tit_cont3">기본 스타일</h4>
+                                <!-- 여기서부터 사용 -->
+                                <textarea class="textarea" placeholder="내용입력">
+ㆍ앱 이용 중 불편한 점 바라는 점을 말씀해주세요. 
+
+ㆍ문의하시는 제휴점 이름과 예약정보를 남겨주시면 보다 
+    빠른 상담이 가능합니다. 
+   
+ㆍ휴대폰 번호를 남겨주시면 유선 답변을 받으실 수 있습니다.
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="g_content">
+                        <div class="g_code_box" style="width: 360px;">
+                            <div class="g_sub_section">
+                                <h4 class="g_tit_cont3">기본 스타일2</h4>
+                                <!-- 여기서부터 사용 -->
+                                <textarea class="textarea2" placeholder="내용입력">
+안녕하세요, 공지사항 내용입니다. 
+
+공지사항 내용입니다. 
+공지사항 내용입니다. 
+공지사항 내용입니다.공지사항 내용입니다.공지사항 내용입니다.
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //박스 안 컨텐츠 -->
+                <!-- 박스 안 컨텐츠 -->
+                <div class="g_content_box">
+                    <div class="g_tit_cont2">
+                        <h3 class="g_tit"><span class="txt_num">03.</span>체크박스</h3>
+                    </div>
+                    <div class="g_content">
+                        <div class="g_code_box" style="width: 360px;">
+                            <div class="g_sub_section">
+                                <h4 class="g_tit_cont3">기본 스타일</h4>
+                                <!-- 여기서부터 사용 -->
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>기본</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="g_content">
+                        <div class="g_code_box" style="width: 360px;">
+                            <div class="g_sub_section">
+                                <h4 class="g_tit_cont3">비활성화</h4>
+                                <!-- 여기서부터 사용 -->
+                                <label>
+                                    <input type="checkbox" disabled />
+                                    <span>비활성화</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //박스 안 컨텐츠 -->
+            </div>
+            <!--  //큰 컨텐츠 박스 -->
+            <!-- 상단으로 가기 버튼 -->
+            <div class="btn_all_top">
+                <a href="#" class="btn_top">Top</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

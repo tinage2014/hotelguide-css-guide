@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>스타일 가이드</title>
+    <!-- 프로젝트 jquery -->
+    <script src="../libs/jquery-1.11.3/jquery-1.11.3.min.js"></script>
+    <script src="../libs/1.11.4/jquery-ui.min.js"></script>
+
+    <!-- 소스코드 하이라이트 -->
+    <script src="../libs/shCore.js"></script>
+    <script src="../libs/shBrushCss.js"></script>
+    <script src="../libs/shBrushJScript.js"></script>
+    <script src="../libs/shBrushXml.js"></script>
+
+    <!-- 프로젝트 jquery -->
+    <script src="../../app/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="../../app/js/vendor/materialize.min.js"></script>
+    <script src="../../app/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- 가이드 css -->
+    <link rel="stylesheet" href="../css/common.css" />
+
+    <!-- 프로젝트 css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="../../app/css/normalize.css" />
+    <link rel="stylesheet" href="../../app/css/helper.css" />
+    <link rel="stylesheet" href="../css/ico.css" />
+
+    <link rel="stylesheet" href="../../app/css/fonts.css" />
+    <link rel="stylesheet" href="../../app/css/color.css" />
+    <link rel="stylesheet" href="../../app/css/common.css" />
+
+    <!-- 소스코드 css -->
+    <link rel="stylesheet" href="../css/shCore.css" />
+    <link rel="stylesheet" href="../css/shThemeEmacs.css" />
+
+    <style>
+        .row {
+            margin-bottom: 4px;
+        }
+
+        .row [class*='col_md'] {
+            height: 40px;
+            padding: 0 15px;
+            background-color: #f8f8f8;
+            border: 1px solid #e6e6e6;
+            line-height: 40px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="gWrap" class="g_wrap">
+        <!-- header -->
+        <div id="gHeader" class="g_header">
+            <h1><small class="g_project_name">호텔가 프로젝트</small><strong class="g_name">UX Style Guide</strong></h1>
+            <div class="g_project_worker">
+                <ul>
+                    <li><strong class="tit">Designer</strong>김서영</li>
+                    <li><strong class="tit">Publisher</strong>김미령</li>
+                </ul>
+            </div>
+        </div>
+        <!-- side -->
+        <div id="gSide" class="g_side">
+            <div class="inner">
+                <div class="g_side_top">
+                    <strong class="g_h_logo"><span class="blind">BPNR</span></strong>
+                </div>
+                <div class="g_lnb">
+                    <ul class="g_lnb_depth1">
+                        <li>
+                            <a href="#" class="on">Guide</a>
+                            <ul class="g_lnb_depth2">
+                                <li><a href="guide_basic.html">기초 구성</a></li>
+                                <li><a href="guide_grid.html" class="on">그리드</a></li>
+                                <li><a href="guide_typography.html">타이포그래피</a></li>
+                                <li><a href="guide_button.html">버튼</a></li>
+                                <li><a href="guide_icon.html">아이콘</a></li>
+                                <li><a href="guide_form.html">폼</a></li>
+                                <li><a href="guide_list.html">리스트</a></li>
+                                <li><a href="guide_content.html">컨텐츠 공통</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- container -->
+        <div id="gContainer" class="g_container">
+            <!--  큰 컨텐츠 박스 -->
+            <div class="g_section">
+                <h2 class="g_tit_cont1">그리드</h2>
+                <!-- 박스 안 컨텐츠 -->
+                <div class="g_content_box">
+                    <div class="g_tit_cont2">
+                        <h3 class="g_tit"><span class="txt_num">01.</span>그리드 옵션</h3>
+                    </div>
+                    <div class="g_content">
+                        <div class="g_tbl_mix">
+                            <table class="g_tbl">
+                                <colgroup>
+                                    <col style="width:20%;" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th class="center-align">모바일(&lt;= 600px, 90%)</th>
+                                        <th class="center-align">테블릿(&gt; 600px, 85%)</th>
+                                        <th class="center-align">노트북(&gt; 992px, 70%)</th>
+                                        <th class="center-align">데스크탑(&gt;1200px, 70%)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>컬럼수</th>
+                                        <td>12</td>
+                                        <td>12</td>
+                                        <td>12</td>
+                                        <td>12</td>
+                                    </tr>
+                                    <tr>
+                                        <th>사이 여백</th>
+                                        <td>10px</td>
+                                        <td>10px</td>
+                                        <td>10px</td>
+                                        <td>10px</td>
+                                    </tr>
+                                    <tr>
+                                        <th>컨테이너 너비</th>
+                                        <td>600px 이하</td>
+                                        <td>600px 초과</td>
+                                        <td>992px 초과</td>
+                                        <td>1200px 초과</td>
+                                    </tr>
+                                    <tr>
+                                        <th>클래스 접두사</th>
+                                        <td>.s</td>
+                                        <td>.m </td>
+                                        <td>.l </td>
+                                        <td>.xl</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- 설명 -->
+                        <div class="box box_imp">
+                            <ul class="list_disc">
+                                <li><strong>그리드는 컬럼을 나누는데 사용.</strong> 'col s' 등 으로 컬럼을 나누어 사용함.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- //박스 안 컨텐츠 -->
+                <!-- 박스 안 컨텐츠 -->
+                <div class="g_content_box">
+                    <div class="g_tit_cont2">
+                        <h3 class="g_tit"><span class="txt_num">02.</span>그리드 예제</h3>
+                    </div>
+                    <div class="g_content">
+                        <div class="g_code_box">
+                            <div class="g_sub_section">
+                                <!-- 여기서부터 사용 -->
+                                <div class="row">
+                                    <div class="col s4">
+                                        col s4
+                                    </div>
+                                    <div class="col s4">
+                                        col s4
+                                    </div>
+                                    <div class="col s4">
+                                        col s4
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12">col s12</div>
+                                    <div class="col s6">col s6</div>
+                                    <div class="col s6">col s6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //박스 안 컨텐츠 -->
+                <div class="g_content_box">
+                    <div class="g_tit_cont2">
+                        <h3 class="g_tit"><span class="txt_num">03.</span>오프셋 예제</h3>
+                    </div>
+                    <div class="g_content">
+                        <div class="g_code_box">
+                            <div class="g_sub_section">
+                                <!-- 여기서부터 사용 -->
+
+                                <div class="row">
+                                    <div class="col s12"><span class="flow-text">col s12</span></div>
+                                    <div class="col s6 offset-s6"><span class="flow-text">col s6 offset-s6</span></div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="g_content_box">
+                    <div class="g_tit_cont2">
+                        <h3 class="g_tit"><span class="txt_num">04.</span>푸쉬 및 풀 예제</h3>
+                    </div>
+                    <div class="g_content">
+                        <div class="g_code_box">
+                            <div class="g_sub_section">
+                                <!-- 여기서부터 사용 -->
+                                <div class="row">
+                                    <div class="col s7 push-s5"><span class="flow-text">col s7 push-s5</span></div>
+                                    <div class="col s5 pull-s7"><span class="flow-text">col s5 pull-s7</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  //큰 컨텐츠 박스 -->
+            <!-- 상단으로 가기 버튼 -->
+            <div class="btn_all_top">
+                <a href="#" class="btn_top">Top</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../app/common.js"></script>
+</body>
+
+</html>

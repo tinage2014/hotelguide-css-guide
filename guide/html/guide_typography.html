@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>스타일 가이드</title>
+		
+    <!-- 소스코드 하이라이트 -->
+    <script src="../libs/shCore.js"></script>
+    <script src="../libs/shBrushCss.js"></script>
+    <script src="../libs/shBrushJScript.js"></script>
+    <script src="../libs/shBrushXml.js"></script>
+
+    <!-- 프로젝트 jquery -->
+    <script src="../../app/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="../../app/js/vendor/materialize.min.js"></script>
+    <script src="../../app/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- 가이드 css -->
+    <link rel="stylesheet" href="../css/common.css" />
+
+    <!-- 프로젝트 css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="../../app/css/normalize.css" />
+    <link rel="stylesheet" href="../../app/css/helper.css" />
+    <link rel="stylesheet" href="../../app/css/ico.css" />
+
+    <link rel="stylesheet" href="../../app/css/fonts.css" />
+    <link rel="stylesheet" href="../../app/css/color.css" />
+    <link rel="stylesheet" href="../../app/css/common.css" />
+
+    <!-- 소스코드 css -->
+    <link rel="stylesheet" href="../css/shCore.css" />
+    <link rel="stylesheet" href="../css/shThemeEmacs.css" />
+
+    <style>
+        .point_col11{background-color:#495057;}
+        .bg_point_col13{color:#fff;}
+        [class*='point_']{margin:2px 0;}
+    </style>
+</head>
+
+<body>
+    <div id="gWrap" class="g_wrap">
+        <!-- header -->
+        <div id="gHeader" class="g_header">
+            <h1><small class="g_project_name">호텔가 프로젝트</small><strong class="g_name">UX Style Guide</strong></h1>
+            <div class="g_project_worker">
+                <ul>
+                    <li><strong class="tit">Designer</strong>김서영</li>
+                    <li><strong class="tit">Publisher</strong>김미령</li>
+                </ul>
+            </div>
+        </div>
+        <!-- side -->
+        <div id="gSide" class="g_side">
+            <div class="inner">
+                <div class="g_side_top">
+                    <strong class="g_h_logo"><span class="blind">호텔가</span></strong>
+                </div>
+                <div class="g_lnb">
+                    <ul class="g_lnb_depth1">
+                        <li>
+                            <a href="#" class="on">Guide</a>
+                            <ul class="g_lnb_depth2">
+                                <li><a href="guide_basic.html">기초 구성</a></li>
+                                <li><a href="guide_grid.html">그리드</a></li>
+                                <li><a href="guide_typography.html" class="on">타이포그래피</a></li>
+                                <li><a href="guide_button.html">버튼</a></li>
+                                <li><a href="guide_icon.html">아이콘</a></li>
+                                <li><a href="guide_form.html">폼</a></li>
+                                <li><a href="guide_list.html">리스트</a></li>
+                                <li><a href="guide_content.html">컨텐츠 공통</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- container -->
+        <div id="gContainer" class="g_container">
+            <!--  큰 컨텐츠 박스 -->
+            <div class="g_section">
+                <h2 class="g_tit_cont1">타이포그래피</h2>
+
+                <!-- 박스 안 컨텐츠 -->
+                <div class="g_content_box">
+                    <div class="g_tit_cont2">
+                        <h3 class="g_tit"><span class="txt_num">01.</span>기본 정보</h3>
+                    </div>
+                    <div class="g_content">
+                        <div class="g_tbl_mix">
+                            <table class="g_tbl">
+                                <colgroup>
+                                    <col />
+                                    <col style="width:40%" />
+                                    <col />
+                                    <col />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>폰트사이즈(font-size)</th>
+                                        <th>폰트명(font-family)</th>
+                                        <th>색상(color)</th>
+                                        <th>행 간격(line-height)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="tc">14px</td>
+                                        <td>스포카 한 산스(Bold, Regular)</td>
+                                        <td class="tc">#4D5256</td>
+                                        <td class="tc">1.5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="box box_view">스포카 한 산스는 스포카의 제품의 다국어 UI에 대응하기 위해 노토 산스와 라토를 바탕으로 커스텀한 글꼴입니다. <span style="text-transform:uppercase;">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span><span style="text-transform:lowercase;">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>1234567890</div>
+                    </div>
+                </div>
+                <!-- //박스 안 컨텐츠 -->
+                <!-- 박스 안 컨텐츠 -->
+                <div class="g_content_box">
+                    <div class="g_tit_cont2">
+                        <h3 class="g_tit"><span class="txt_num">02.</span>제목</h3>
+                    </div>
+                    <div class="g_content">
+                        <div class="g_code_box">
+                            <div class="g_sub_section">
+                                <h4 class="g_tit_cont3">기본</h4>
+                                <!-- 여기서부터 사용 -->
+                                <h1>H1 Heading</h1>
+                                <h2>H2 Heading</h2>
+                                <h3>H3 Heading</h3>
+                                <h4>H4 Heading</h4>
+                                <h5>H5 Heading</h5>
+                                <h6>H6 Heading</h6>
+                            </div>
+                            <div class="g_sub_section">
+                                <h4 class="g_tit_cont3">클래스 사용</h4>
+                                <!-- 여기서부터 사용 -->
+                                <h1 class="h1">H1 Heading</h1>
+                                <h2 class="h2">H2 Heading</h2>
+                                <h3 class="h3">H3 Heading</h3>
+                                <h4 class="h4">H4 Heading</h4>
+                                <h5 class="h5">H5 Heading</h5>
+                                <h6 class="h6">H6 Heading</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //박스 안 컨텐츠 -->
+                <!-- 박스 안 컨텐츠 -->
+                <div class="g_content_box">
+                    <div class="g_tit_cont2">
+                        <h3 class="g_tit"><span class="txt_num">03.</span>클래스 효과</h3>
+                    </div>
+                    <div class="g_content">
+                        <div class="g_code_box row">
+                            <div class="g_sub_section">
+                                <h4 class="g_tit_cont3">텍스트 색상</h4>
+                                <!-- 여기서부터 사용 -->
+                                <p class="text-brown">text-brown</p>
+                                <p class="text-mint">text-mint</p>
+                                <p class="text-mint-2">text-mint2</p>
+                                <p class="text-yellow">text-yellow</p>
+                                <p class="text-orange">text-orange</p>
+                                <p class="text-red">text-red</p>
+                                <p class="text-pink">text-pink</p>
+                                <p class="text-pink-2">text-pink2</p>
+                                <p class="text-pink-3">text-pink3</p>
+                                <p class="text-dark">text-dark</p>
+                                <p class="text-dark-2">text-dark2</p>
+                                <p class="text-dark-3">text-dark3</p>
+                                <p class="text-dark-4">text-dark4</p>
+                                <p class="text-gray">text-gray</p>
+                                <p class="text-gray-2">text-gray-2</p>
+                                <p class="text-gray-3">text-gray-3</p>
+                                <p class="text-gray-4">text-gray-4</p>
+                                <p class="text-gray-5">text-gray-5</p>
+                                <p class="text-gray-6">text-gray-6</p>
+                                <p class="text-gray-7">text-gray-7</p>                             
+                                <p class="text-white">text-white</p>            
+                            </div>
+
+                            <div class="g_sub_section">
+                                <h4 class="g_tit_cont3">배경 색상</h4>
+                                <!-- 여기서부터 사용 -->
+                                <p class="bg-white">bg-white</p>
+                                <p class="bg-black">bg-black</p>
+                                <p class="bg-darkgray">bg-darkgray</p>
+                                <p class="bg-darkgray-2">bg-darkgray2</p>
+                                <p class="bg-darkgray-3">bg-darkgray3</p>
+                                <p class="bg-yellow">bg-yellow</p>
+                                <p class="bg-orange">bg-orange</p>
+                                <p class="bg-orange-2">bg-orange2</p>
+                                <p class="bg-gray">bg-gray</p>
+                                <p class="bg-gray-2">bg-gray-2</p>
+                                <p class="bg-gray-3">bg-gray-3</p>
+                                <p class="bg-gray-4">bg-gray-4</p>
+                                <p class="bg-gray-5">bg-gray-5</p>
+                                <p class="bg-gray-6">bg-gray-6</p>
+                            </div>
+
+                            <div class="g_sub_section">
+                                <h4 class="g_tit_cont3">박스 선 색상</h4>
+                                <!-- 여기서부터 사용 -->
+                                <p class="border-red">border-red</p>
+                                <p class="border-gray">border-gray</p>
+                                <p class="border-gray-2">border-gray-2</p>
+                                <p class="border-gray-3">border-gray-3</p>
+                                <p class="border-white">border-white</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //박스 안 컨텐츠 -->
+            </div>
+            <!--  //큰 컨텐츠 박스 -->
+            <!-- 상단으로 가기 버튼 -->
+            <div class="btn_all_top">
+                <a href="#" class="btn_top">Top</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../app/common.js"></script>
+</body>
+</html>

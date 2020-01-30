@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>스타일 가이드</title>
+
+    <!-- 소스코드 하이라이트 -->
+    <script src="../libs/shCore.js"></script>
+    <script src="../libs/shBrushCss.js"></script>
+    <script src="../libs/shBrushJScript.js"></script>
+    <script src="../libs/shBrushXml.js"></script>
+
+    <!-- 프로젝트 jquery -->
+    <script src="../../app/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="../../app/js/vendor/materialize.min.js"></script>
+
+    <!-- 가이드 css -->
+    <link rel="stylesheet" href="../css/common.css" />
+
+    <!-- 프로젝트 css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="../../app/css/normalize.css" />
+    <link rel="stylesheet" href="../../app/css/helper.css" />
+    <link rel="stylesheet" href="../../app/css/ico.css" />
+
+    <link rel="stylesheet" href="../../app/css/fonts.css" />
+    <link rel="stylesheet" href="../../app/css/color.css" />
+    <link rel="stylesheet" href="../../app/css/common.css" />
+
+    <!-- 소스코드 css -->
+    <link rel="stylesheet" href="../css/shCore.css" />
+    <link rel="stylesheet" href="../css/shThemeEmacs.css" />
+</head>
+
+<body>
+    <div id="gWrap" class="g_wrap">
+        <!-- header -->
+        <div id="gHeader" class="g_header">
+            <h1><small class="g_project_name">샘플 프로젝트</small><strong class="g_name">UX Style Guide</strong></h1>
+            <div class="g_project_worker">
+                <ul>
+                    <li><strong class="tit">Designer</strong>정은경</li>
+                    <li><strong class="tit">Publisher</strong>김서영</li>
+                </ul>
+            </div>
+        </div>
+        <!-- side -->
+        <div id="gSide" class="g_side">
+            <div class="inner">
+                <div class="g_side_top">
+                    <strong class="g_h_logo"><span class="blind">BPNR</span></strong>
+                </div>
+                <div class="g_lnb">
+                    <ul class="g_lnb_depth1">
+                        <li>
+                            <a href="#" class="on">Guide</a>
+                            <ul class="g_lnb_depth2">
+                                <li><a href="guide_basic.html">기초 구성</a></li>
+                                <li><a href="guide_grid.html">그리드</a></li>
+                                <li><a href="guide_typography.html">타이포그래피</a></li>
+                                <li><a href="guide_button.html">버튼</a></li>
+                                <li><a href="guide_icon.html">아이콘</a></li>
+                                <li><a href="guide_form.html">폼</a></li>
+                                <li><a href="guide_list.html">리스트</a></li>
+                                <li><a href="guide_content.html">컨텐츠 공통</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- container -->
+        <div id="gContainer" class="g_container">
+            <!--  큰 컨텐츠 박스 -->
+            <div class="g_section">
+                <h2 class="g_tit_cont1">탭</h2>
+                <!-- 박스 안 컨텐츠 -->
+                <div class="g_content_box">
+                    <div class="g_tit_cont2">
+                        <h3 class="g_tit"><span class="txt_num">01.</span>기본 스타일</h3>
+                    </div>
+                    <div class="g_content">
+                        <div class="g_code_box">
+                            <div class="g_sub_section" style="width: 360px;">
+                                <h4 class="g_tit_cont3">스타일 1</h4>
+                                <!-- 여기서부터 사용 -->
+                                <div class="toggle_group">
+                                    <label class="tg_btn" for="tg1_1">
+                                        <input type="radio" id="tg1_1" class="tg_radio" name="tg" value="1" checked>
+                                        <div class="btn_n btn_m"><span class="txt_label">전체</span></div>
+                                    </label>
+                                    <label class="tg_btn" for="tg1_2">
+                                        <input type="radio" id="tg1_2" class="tg_radio" name="tg" value="2">
+                                        <div class="btn_n btn_m"><span class="txt_label">개인</span></div>
+                                    </label>
+                                    <label class="tg_btn" for="tg1_3">
+                                        <input type="radio" id="tg1_3" class="tg_radio" name="tg" value="3">
+                                        <div class="btn_n btn_m"><span class="txt_label">공용</span></div>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- 설명 -->
+                        <div class="box box_imp">
+                            <ul class="list_disc">
+                                <li>현재 가이드 js파일로 기본 체크색상이 나오지 않지만 프로젝트 상에선 작동함.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- //박스 안 컨텐츠 -->
+                <div class="g_content_box">
+                    <div class="g_tit_cont2">
+                        <h3 class="g_tit"><span class="txt_num">02.</span>하단 탭</h3>
+                    </div>
+                    <div class="g_content">
+                        <div class="g_code_box">
+                            <div class="g_sub_section" style="width: 360px;">
+                                <h4 class="g_tit_cont3">스타일 1</h4>
+                                <!-- 여기서부터 사용 -->
+                                <div class="tab_group">
+                                    <label class="tab_btn" for="btg1_1">
+                                        <input type="radio" id="btg1_1" class="tab_radio" name="btg" value="1" checked>
+                                        <div class="btn_wrap">
+                                            <i class="ico ico_home"></i>
+                                            <p class="txt_label">홈</p>
+                                        </div>
+                                    </label>
+
+                                    <label class="tab_btn" for="btg1_2">
+                                        <input type="radio" id="btg1_2" class="tab_radio" name="btg" value="2">
+                                        <div class="btn_wrap">
+                                            <i class="ico ico_article_line"></i>
+                                            <p class="txt_label">물품관리</p>
+                                        </div>
+                                    </label>
+                                    <label class="tab_btn" for="btg1_3">
+                                        <input type="radio" id="btg1_3" class="tab_radio" name="btg" value="3">
+                                        <div class="btn_wrap">
+                                            <i class="ico ico_card fs14"></i>
+                                            <p class="txt_label">카드관리</p>
+                                        </div>
+                                    </label>
+                                    <label class="tab_btn" for="btg1_4">
+                                        <input type="radio" id="btg1_4" class="tab_radio" name="btg" value="4">
+                                        <div class="btn_wrap">
+                                            <i class="ico ico_extra"></i>
+                                            <p class="txt_label">부가기능</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- //박스 안 컨텐츠 -->
+                <div class="g_content_box">
+                    <div class="g_tit_cont2">
+                        <h3 class="g_tit"><span class="txt_num">03.</span>스위치</h3>
+                    </div>
+                    <div class="g_content">
+                        <div class="g_code_box">
+                            <div class="g_sub_section">
+                                <h4 class="g_tit_cont3">Switch</h4>
+                                <!-- 여기서부터 사용 -->
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="lever nm"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="g_sub_section">
+                                <h4 class="g_tit_cont3">Disabled Switch</h4>
+                                <!-- 여기서부터 사용 -->
+                                <div class="switch">
+                                    <label>
+                                        <input disabled type="checkbox">
+                                        <span class="lever nm"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!--  //큰 컨텐츠 박스 -->
+            <!-- 상단으로 가기 버튼 -->
+            <div class="btn_all_top">
+                <a href="#" class="btn_top">Top</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../app/common.js"></script>
+</body>
+
+</html>

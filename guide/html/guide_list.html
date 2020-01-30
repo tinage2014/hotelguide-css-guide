@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>스타일 가이드</title>
+
+		<!-- 소스코드 하이라이트 -->
+		<script src="../libs/shCore.js"></script>
+		<script src="../libs/shBrushCss.js"></script>
+		<script src="../libs/shBrushJScript.js"></script>
+		<script src="../libs/shBrushXml.js"></script>
+
+		<!-- 프로젝트 jquery -->
+		<script src="../../app/js/vendor/jquery-1.11.2.min.js"></script>
+		<script src="../../app/js/vendor/materialize.min.js"></script>
+		<script src="../../app/js/vendor/modernizr-2.8.3.min.js"></script>
+
+		<!-- 가이드 css -->
+		<link rel="stylesheet" href="../css/common.css" />
+
+		<!-- 프로젝트 css -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+		<link rel="stylesheet" href="../../app/css/normalize.css" />
+		<link rel="stylesheet" href="../../app/css/helper.css" />
+		<link rel="stylesheet" href="../../app/css/ico.css" />
+
+		<link rel="stylesheet" href="../../app/css/fonts.css" />
+		<link rel="stylesheet" href="../../app/css/color.css" />
+		<link rel="stylesheet" href="../../app/css/common.css" />
+
+		<!-- 소스코드 css -->
+		<link rel="stylesheet" href="../css/shCore.css" />
+		<link rel="stylesheet" href="../css/shThemeEmacs.css" />
+		<style>
+			.list_box_s, .list_num {
+				width: 500px;
+				margin: 0;
+			}
+
+			.list_box.lb_sty01 {
+				margin: 0;
+			}
+
+			.list_box.lb_sty02 .card_box .list_box_s {
+				width: 100%;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div id="gWrap" class="g_wrap">
+			<!-- header -->
+			<div id="gHeader" class="g_header">
+				<h1><small class="g_project_name">호텔가 프로젝트</small><strong class="g_name">UX Style Guide</strong></h1>
+				<div class="g_project_worker">
+					<ul>
+						<li>
+							<strong class="tit">Designer</strong>김서영
+						</li>
+						<li>
+							<strong class="tit">Publisher</strong>김미령
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- side -->
+			<div id="gSide" class="g_side">
+				<div class="inner">
+					<div class="g_side_top">
+						<strong class="g_h_logo"><span class="blind">호텔가</span></strong>
+					</div>
+					<div class="g_lnb">
+						<ul class="g_lnb_depth1">
+							<li>
+								<a href="#" class="on">Guide</a>
+								<ul class="g_lnb_depth2">
+									<li>
+										<a href="guide_basic.html">기초 구성</a>
+									</li>
+									<li>
+										<a href="guide_grid.html">그리드</a>
+									</li>
+									<li>
+										<a href="guide_typography.html">타이포그래피</a>
+									</li>
+									<li>
+										<a href="guide_button.html">버튼</a>
+									</li>
+									<li>
+										<a href="guide_icon.html">아이콘</a>
+									</li>
+									<li>
+										<a href="guide_form.html">폼</a>
+									</li>
+									
+									<li>
+										<a href="guide_list.html" class="on">리스트</a>
+									</li>
+									
+									<li>
+										<a href="guide_content.html">컨텐츠 공통</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- container -->
+			<div id="gContainer" class="g_container">
+				<!--  큰 컨텐츠 박스 -->
+				<div class="g_section">
+					<h2 class="g_tit_cont1">리스트</h2>
+					<!-- 박스 안 컨텐츠 -->
+					<div class="g_content_box">
+						<div class="g_tit_cont2">
+							<h3 class="g_tit"><span class="txt_num">01.</span>쿠폰 리스트</h3>
+						</div>
+						<div class="g_content">
+							<div class="g_code_box">
+
+								<div class="g_sub_section" style="width: 360px;">
+
+									<!-- 여기서부터 사용 -->
+									<ul class="main-container clearfix">
+
+										<li class="coupon-list-content row">
+
+											<img src="../../app/images/product.png" alt="">
+
+											<div class="coupon-list-text">
+												<p class="list-tit">
+													영등포 프리호텔 - Free hotel 숙소...
+												</p>
+												<p class="list-sub">
+													선착순 최대 2만원할인
+												</p>
+											</div>
+										</li>
+
+										<li class="coupon-list-content row">
+
+											<img src="../../app/images/product.png" alt="">
+
+											<div class="coupon-list-text">
+												<p class="list-tit">
+													영등포 프리호텔 - Free hotel 숙소...
+												</p>
+												<p class="list-sub">
+													선착순 최대 2만원할인
+												</p>
+											</div>
+										</li>
+
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- //박스 안 컨텐츠 -->
+
+					<!-- 박스 안 컨텐츠 -->
+					<div class="g_content_box">
+						<div class="g_tit_cont2">
+							<h3 class="g_tit"><span class="txt_num">02.</span>쿠폰 요청 리스트</h3>
+						</div>
+						<div class="g_content">
+							<div class="g_code_box">
+
+								<div class="g_sub_section" style="width: 360px;">
+
+									<!-- 여기서부터 사용 -->
+									<ul class="main-container clearfix">
+
+										<li class="coupon-list-content row">
+
+											<img src="../../app/images/product.png" alt="">
+
+											<div class="coupon-list-text">
+												<p class="list-tit">
+													영등포 프리호텔 - Free hotel 숙소...
+												</p>
+												<p class="list-sub">
+													영등포구역 앞 로터리, 영등포역 지하 쇼핑몰 5번출구 인근 / NAVI-영등포동 6가 71-2
+												</p>
+											</div>
+
+											<div class="coupon-list-sale row">
+												
+												<div class="col s12 np">
+													<p class="text-mint conpon-list-title">
+														선착순 최대 2만원할인
+													</p>
+												</div>
+
+												<div class="coupon-list-sale-content">
+													<div class="col s6 coupon-list-list noline_right">
+														<div class="col s5 np">
+															<p class="room">
+																대실
+															</p>
+															<span class="bg-red text-white">15%할인</span>
+														</div>
+														<div class="col s7 np">
+															<p class="strike">
+																30,000원
+															</p>
+															<p class="price">
+																19,000<span class="text_s">원<span>
+															</p>
+														</div>
+													</div>
+													<div class="col s6 coupon-list-list">
+														<div class="col s5 np">
+															<p class="room">
+																숙박
+															</p>
+															<span class="bg-red text-white">15%할인</span>
+														</div>
+														<div class="col s7 np">
+															<p class="strike">
+																130,000원
+															</p>
+															<p class="price">
+																105,000<span class="text_s">원<span>
+															</p>
+														</div>
+													</div>
+												</div>
+												
+												<button class="bg-mint text-white coupon_btn"><img src="../../app/images/ic_coupondown.png" alt="쿠폰"> 쿠폰 받기</button>
+												
+											</div>
+
+										</li>
+
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- //박스 안 컨텐츠 -->
+
+				</div>
+				<!--  //큰 컨텐츠 박스 -->
+				<!-- 상단으로 가기 버튼 -->
+				<div class="btn_all_top">
+					<a href="#" class="btn_top">Top</a>
+				</div>
+			</div>
+		</div>
+
+		<script src="../../app/common.js"></script>
+	</body>
+
+</html>

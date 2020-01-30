@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>스타일 가이드</title>
+
+    <!-- 소스코드 하이라이트 -->
+    <script src="../libs/shCore.js"></script>
+    <script src="../libs/shBrushCss.js"></script>
+    <script src="../libs/shBrushJScript.js"></script>
+    <script src="../libs/shBrushXml.js"></script>
+
+    <!-- 프로젝트 jquery -->
+    <script src="../../app/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="../../app/js/vendor/materialize.min.js"></script>
+    <script src="../../app/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- 가이드 css -->
+    <link rel="stylesheet" href="../css/common.css" />
+
+    <!-- 프로젝트 css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="../../app/css/normalize.css" />
+    <link rel="stylesheet" href="../../app/css/helper.css" />
+    <link rel="stylesheet" href="../../app/css/ico.css" />
+
+    <link rel="stylesheet" href="../../app/css/fonts.css" />
+    <link rel="stylesheet" href="../../app/css/color.css" />
+    <link rel="stylesheet" href="../../app/css/common.css" />
+
+    <!-- 소스코드 css -->
+    <link rel="stylesheet" href="../css/shCore.css" />
+    <link rel="stylesheet" href="../css/shThemeEmacs.css" />
+
+    <style>
+        .filter_wrap{position:relative; width:95%; margin:0 auto; padding:10px 0; top:0;}
+        .bg_popup_wrap{position:absolute; width:100%; height:100%;}
+    </style>
+</head>
+
+<body>
+    <div id="gWrap" class="g_wrap">
+        <!-- header -->
+        <div id="gHeader" class="g_header">
+            <h1><small class="g_project_name">샘플 프로젝트</small><strong class="g_name">UX Style Guide</strong></h1>
+            <div class="g_project_worker">
+                <ul>
+                    <li><strong class="tit">Designer</strong>정은경</li>
+                    <li><strong class="tit">Publisher</strong>김서영</li>
+                </ul>
+            </div>
+        </div>
+        <!-- side -->
+        <div id="gSide" class="g_side">
+            <div class="inner">
+                <div class="g_side_top">
+                    <strong class="g_h_logo"><span class="blind">BPNR</span></strong>
+                </div>
+                <div class="g_lnb">
+                    <ul class="g_lnb_depth1">
+                        <li>
+                            <a href="#" class="on">Guide</a>
+                            <ul class="g_lnb_depth2">
+                                <li><a href="guide_basic.html">기초 구성</a></li>
+                                <li><a href="guide_grid.html">그리드</a></li>
+                                <li><a href="guide_typography.html">타이포그래피</a></li>
+                                <li><a href="guide_button.html">버튼</a></li>
+                                <li><a href="guide_icon.html">아이콘</a></li>
+                                <li><a href="guide_form.html">폼</a></li>
+                                <li><a href="guide_table.html">테이블</a></li>
+                                <li><a href="guide_tab.html">탭</a></li>
+                                <li><a href="guide_search.html" class="on">검색영역</a></li>
+                                <li><a href="guide_content.html">컨텐츠 공통</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- container -->
+        <div id="gContainer" class="g_container">
+            <!--  큰 컨텐츠 박스 -->
+            <div class="g_section">
+                <h2 class="g_tit_cont1">검색영역</h2>
+                <!-- 박스 안 컨텐츠 -->
+                <div class="g_content_box">
+                    <div class="g_tit_cont2">
+                        <h3 class="g_tit"><span class="txt_num">01.</span>필터 검색</h3>
+                    </div>
+                    <div class="g_content">
+                        <div class="g_code_box">
+                            <!-- filter(dialog이용시 코드 임시 적용) -->
+                            <div class="mdl-dialog filter_wrap">
+                                <div class="mdl-dialog__content filter_cont">
+                                    <!-- filter_category -->
+                                    <div class="filter_view">
+                                        <strong class="tit">category</strong>
+                                        <div class="filter_box toggle_group tg_sty02 f_col">
+                                            <label class="tg_btn" for="filter-op-2-1">
+                                                <input type="radio" id="filter-op-2-1" class="tg_radio" name="filter-op-2" value="1" checked="checked" />
+                                                <span class="btn_n txt_label">Style Top 10</span>
+                                                <i class="material-icons">done </i>
+                                            </label>
+                                            <label class="tg_btn" for="filter-op-2-2">
+                                                <input type="radio" id="filter-op-2-2" class="tg_radio" name="filter-op-2" value="2" />
+                                                <span class="btn_n txt_label">Style Worst 10</span>
+                                                <i class="material-icons">done </i>
+                                            </label>
+                                            <label class="tg_btn" for="filter-op-2-3">
+                                                <input type="radio" id="filter-op-2-3" class="tg_radio" name="filter-op-2" value="3" />
+                                                <span class="btn_n txt_label">복종별 Style</span>
+                                                <i class="material-icons">done </i>
+                                            </label>
+                                            <label class="tg_btn" for="filter-op-2-4">
+                                                <input type="radio" id="filter-op-2-4" class="tg_radio" name="filter-op-2" value="4" />
+                                                <span class="btn_n txt_label">소재별 Style</span>
+                                                <i class="material-icons">done </i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!-- filter_cloth -->
+                                    <div class="filter_view">
+                                        <strong class="tit">cloth</strong>
+                                        <div class="filter_box check_group cg_sty01">
+                                            <label class="tg_btn btn_all" for="filter-cl-a">
+                                                <input type="checkbox" id="filter-cl-a" class="cg_check" checked="checked" />
+                                                <span class="cg_box"><i class="material-icons">done</i></span>
+                                                <span class="btn_n btn_s txt_label">복종 전체</span>
+                                            </label>
+                                            <div class="list">
+                                                <label class="tg_btn" for="filter-cl-1">
+                                                    <input type="checkbox" id="filter-cl-1" class="cg_check" checked="checked" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">OP</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-2">
+                                                    <input type="checkbox" id="filter-cl-2" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">PO</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-3">
+                                                    <input type="checkbox" id="filter-cl-3" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">PD</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-4">
+                                                    <input type="checkbox" id="filter-cl-4" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">HC</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-5">
+                                                    <input type="checkbox" id="filter-cl-5" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">SK</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-6">
+                                                    <input type="checkbox" id="filter-cl-6" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">VS</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-7">
+                                                    <input type="checkbox" id="filter-cl-7" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">PT</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-8">
+                                                    <input type="checkbox" id="filter-cl-8" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">OT</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-9">
+                                                    <input type="checkbox" id="filter-cl-9" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">MF</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-10">
+                                                    <input type="checkbox" id="filter-cl-10" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">BL</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-11">
+                                                    <input type="checkbox" id="filter-cl-11" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">BY</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-12">
+                                                    <input type="checkbox" id="filter-cl-12" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">SH</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-13">
+                                                    <input type="checkbox" id="filter-cl-13" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">JK</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-14">
+                                                    <input type="checkbox" id="filter-cl-14" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">CD</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-15">
+                                                    <input type="checkbox" id="filter-cl-15" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">TS</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-16">
+                                                    <input type="checkbox" id="filter-cl-16" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">CJ</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-17">
+                                                    <input type="checkbox" id="filter-cl-17" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">BO</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-18">
+                                                    <input type="checkbox" id="filter-cl-18" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">BC</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-19">
+                                                    <input type="checkbox" id="filter-cl-19" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">HB</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-20">
+                                                    <input type="checkbox" id="filter-cl-20" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">XX</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-21">
+                                                    <input type="checkbox" id="filter-cl-21" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">WL</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-22">
+                                                    <input type="checkbox" id="filter-cl-22" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">AK</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-23">
+                                                    <input type="checkbox" id="filter-cl-23" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">GL</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-24">
+                                                    <input type="checkbox" id="filter-cl-24" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">SO</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-25">
+                                                    <input type="checkbox" id="filter-cl-25" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">JP</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-26">
+                                                    <input type="checkbox" id="filter-cl-26" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">NL</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-27">
+                                                    <input type="checkbox" id="filter-cl-27" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">BT</span>
+                                                </label>
+                                                <label class="tg_btn" for="filter-cl-28">
+                                                    <input type="checkbox" id="filter-cl-28" class="cg_check" />
+                                                    <span class="cg_box"><i class="material-icons">done</i></span>
+                                                    <span class="btn_n btn_s txt_label">HT</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- filter_period -->
+                                    <div class="filter_view">
+                                        <strong class="tit">period</strong>
+                                        <div class="filter_box toggle_group tg_sty01">
+                                            <label class="tg_btn" for="filter-op-3-1">
+                                                <input type="radio" id="filter-op-3-1" class="tg_radio" name="select" value="1" checked="checked" />
+                                                <span class="btn_n txt_label">시즌선택</span>
+                                            </label>
+                                            <label class="tg_btn" for="filter-op-3-2">
+                                                <input type="radio" id="filter-op-3-2" class="tg_radio" name="select" value="2" />
+                                                <span class="btn_n txt_label">기간선택</span>
+                                            </label>
+                                        </div>
+                                        <!-- 시즌 선택 -->
+                                        <div class="groups">
+                                            <div class="select_box filter_box" style="min-width: 135px;">
+                                                <select class="select">
+                                                    <option>선택</option>
+                                                    <option>I</option>
+                                                    <option>H</option>
+                                                </select>
+                                            </div>
+                                            <div class="select_box filter_box" style="min-width: 135px;">
+                                                <select class="select">
+                                                    <option>선택</option>
+                                                    <option>A</option>
+                                                    <option>B</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- 기간 선택 -->
+                                        <div class="groups">
+                                            <!-- date -->
+                                            <div class="input_group input_icon_group" style="width:135px;">
+                                                <!-- date -->
+                                                <form action="#">
+                                                    <label class="btn_icon_nl" for="startDate">
+                                                        <i class="material-icons">calendar_today</i>
+                                                    </label>
+                                                    <input class="input_text" type="text" id="startDate" />
+                                                </form>
+                                            </div>
+                                            <!-- date -->
+                                            <div class="input_group input_icon_group" style="width:135px;">
+                                                <!-- date -->
+                                                <form action="#">
+                                                    <label class="btn_icon_nl" for="endDate">
+                                                        <i class="material-icons">calendar_today</i>
+                                                    </label>
+                                                    <input class="input_text" type="text" id="endDate" />
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter_btns">
+                                    <button type="button" class="btn_n">초기화</button>
+                                    <button type="button" class="btn_n">필터적용</button>
+                                </div>
+                            </div>
+                            <div class="bg_popup_wrap"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //박스 안 컨텐츠 -->
+            </div>
+            <!--  //큰 컨텐츠 박스 -->
+            <!-- 상단으로 가기 버튼 -->
+            <div class="btn_all_top">
+                <a href="#" class="btn_top">Top</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../app/common.js"></script>
+</body>
+</html>
